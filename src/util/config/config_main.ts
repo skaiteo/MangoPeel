@@ -39,12 +39,9 @@ export const paramList:{ [paramName: string]: ParamData }={
       toggle:{
           label:localizeStrEnum.HORIZONTAL_LABEL,
           description:localizeStrEnum.HORIZONTAL_DESCRIPTION,
-          defaultEnable:true,
+          defaultEnable:false,
       },
-      patchs:[{
-        type:ParamPatchType.notchSlider,
-        args:[0,1]
-      }]
+      patchs:[]
   },
   [ParamName.horizontal_stretch]:{
       name:ParamName.horizontal_stretch,
@@ -53,6 +50,7 @@ export const paramList:{ [paramName: string]: ParamData }={
       toggle:{
           label:"Horizontal stretch",
           description:"Stretch horizontal layout to screen width",
+          isShowPatchWhenEnable: true,
           defaultEnable:true,
       },
       patchs:[{

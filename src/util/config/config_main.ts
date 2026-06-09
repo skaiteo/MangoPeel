@@ -43,6 +43,17 @@ export const paramList:{ [paramName: string]: ParamData }={
       },
       patchs:[]
   },
+  [ParamName.horizontal_stretch]:{
+      name:ParamName.horizontal_stretch,
+      group:ParamGroup.LAYOUT,
+      preCondition:[{disable:[ParamName.legacy_layout,ParamName.no_display,ParamName.fps_only,ParamName.preset]}],
+      toggle:{
+          label:"Horizontal stretch",
+          description:"Stretch horizontal layout to screen width",
+          defaultEnable:false,
+      },
+      patchs:[]
+  },
   [ParamName.table_columns]:{
       name:ParamName.table_columns,
       group:ParamGroup.LAYOUT,

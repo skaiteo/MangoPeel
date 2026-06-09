@@ -43,6 +43,7 @@ export enum ParamName {
   refresh_rate = "refresh_rate",
   no_display = "no_display",
   horizontal = "horizontal",
+  horizontal_stretch = "horizontal_stretch",
   hud_no_margin = "hud_no_margin",
   table_columns = "table_columns",
   arch="arch",
